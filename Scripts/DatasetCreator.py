@@ -8,7 +8,7 @@ def create_dataset(dataset_path):
         'Context_Translated': pd.NA,
         'Response_Translated': pd.NA
     })
-    result_df.to_csv('Dataset/result.csv')
+    result_df.to_csv('Dataset/result.csv', index=False)
 
 if __name__ == '__main__':
     create_dataset(dataset_path='Dataset/train.csv')
